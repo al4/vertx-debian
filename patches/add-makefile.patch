@@ -3,8 +3,10 @@ Add Makefile for simpler installation
 +++ b/Makefile
 @@ -0,0 +1,15 @@
 +maven_repo = http://repo1.maven.org/maven2
-+slf4j_version = 1.6.5
-+logback_version = 1.0.6
++slf4j_version = 1.7.7
++logback_version = 1.1.2
++raven_version = 5.0
++guava_version = 17.0
 +
 +all:
 +
@@ -15,5 +17,8 @@ Add Makefile for simpler installation
 +	wget $(maven_repo)/org/slf4j/slf4j-api/$(slf4j_version)/slf4j-api-$(slf4j_version).jar -P $(DESTDIR)/usr/share/vertx
 +	wget $(maven_repo)/ch/qos/logback/logback-core/$(logback_version)/logback-core-$(logback_version).jar -P $(DESTDIR)/usr/share/vertx
 +	wget $(maven_repo)/ch/qos/logback/logback-classic/$(logback_version)/logback-classic-$(logback_version).jar -P $(DESTDIR)/usr/share/vertx
++	wget $(maven_repo)/net/kencochrane/raven/raven-logback/$(raven_version)/raven-logback-$(logback_version).jar -P $(DESTDIR)/usr/share/vertx
++	wget $(maven_repo)/net/kencochrane/raven/raven/$(raven_version)/raven-$(logback_version).jar -P $(DESTDIR)/usr/share/vertx
++	wget $(maven_repo)/com/google/guava/guava/$(guava_version)/guava-$(guava_version).jar -P $(DESTDIR)/usr/share/vertx
 +	mkdir -p $(DESTDIR)/etc/vertx
 +	cp -r conf/* $(DESTDIR)/etc/vertx
