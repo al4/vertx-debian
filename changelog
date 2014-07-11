@@ -1,3 +1,15 @@
+vert.x (2.1-2) UNRELEASED; urgency=low
+
+  * Non-maintainer upload.
+
+ -- Alex Forbes <alforbes@gumtree.com>  Wed, 11 Jun 2014 15:47:24 +0100
+
+vert.x (2.1) unstable; urgency=medium
+
+  * Non-maintainer upload.
+
+ -- Alex Forbes <alforbes@gumtree.com>  Wed, 11 Jun 2014 15:30:52 +0100
+
 vert.x (2.1M2-2) unstable; urgency=medium
 
   * Add slf4j and logback dependencies
